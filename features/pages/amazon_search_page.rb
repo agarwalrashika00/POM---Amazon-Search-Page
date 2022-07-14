@@ -4,7 +4,7 @@ class AmazonSearchPage
     button(:search, :id => 'nav-search-submit-button')
 
     def visit_site
-        @browser.get 'http://www.amazon.com'
+        navigate_to 'http://www.amazon.com'
     end
 
     def search_for(search_key)
